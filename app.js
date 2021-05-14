@@ -26,6 +26,8 @@ const articleSchema = {
 };
 const Article = mongoose.model("Article", articleSchema);
 
+/////////////////////////All Articles///////////////////////////////////
+
 app
   .route("/articles")
   .get(function (req, res) {
@@ -60,6 +62,8 @@ app
       }
     });
   });
+
+/////////////////////////Individual Articles///////////////////////////////////
 
 app
   .route("/articles/:articleTitle")
